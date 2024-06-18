@@ -5,6 +5,11 @@ import { createSvgIconsPlugin } from "vite-plugin-svg-icons";
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  // 部署到 github
+  base: "vue-project",
+  build: {
+    outDir: "docs",
+  },
   plugins: [
     vue(),
     createSvgIconsPlugin({
