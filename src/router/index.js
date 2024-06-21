@@ -23,6 +23,13 @@ export const routes = [
     path: "/response",
     component: () => import("../views/Response/index.vue"),
   },
+  {
+    // 自定义 hooks
+    id: 4,
+    name: "自定义 hook",
+    path: "/hook",
+    component: () => import("../views/Hook.vue"),
+  },
 ];
 
 // 路由对象
